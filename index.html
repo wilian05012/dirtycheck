@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dirty check</title>
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <form method="get" name="frm">
+            <h3>Personal Information</h1>
+            <div class="ctrl-group ctrl-group-inline">
+                <label class="label-inline" for="fName">First Name</label>
+                <input id="fName" type="text" name="fName" required>
+            </div>
+            <div class="ctrl-group ctrl-group-inline">
+                <label class="label-inline" for="lName">Last Name</label>
+                <input id="lName" type="text" name="lName" required>
+            </div>
+            <div class="ctrl-group">
+                <div class="radio-group">
+                    <p class="radio-group__label">Gender</p>
+                    <input id="male" type="radio" value="Male" name="gender" required>
+                    <label for="male">Male</label>
+                    
+                    <input id="female" type="radio" value="Female" name="gender" required>
+                    <label for="female">Female</label>
+                </div>
+            </div>
+            <div class="ctrl-group ctrl-group-inline">
+                <label class="label-inline" for="race">Race</label>
+                <select id="race" name="race" required>
+                    <option value="" selected>Select an option</option>
+                    <option value="black">Black</option>
+                    <option value="white">White</option>
+                </select>
+            </div>
+            <div class="btn-group">
+                <input id="verified" type="checkbox" name="verified" required>
+                <label for="verified">I have read the terms and conditions</label>
+                <button style="margin-top: 0.5rem;" type="submit">Submit</button>
+                <button type="reset">Clear</button>
+            </div>
+        </form>
+
+        <a href="./page2.html">Navigate Away</a>
+    </main>
+
+</body>
+
+</html>
